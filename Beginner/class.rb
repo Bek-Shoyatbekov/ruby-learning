@@ -21,3 +21,17 @@ userName = me.getUserName()
 
 puts userName
 
+
+
+class Book
+    # attr_reader can be used to access class methods and variables
+    attr_reader :title , :author
+    def initialize(title, author)
+        @title = title
+        @author = author
+    end
+end
+
+book = Book.new("Atomic Habits","James Clear")
+
+
